@@ -9,14 +9,15 @@ This toolbox provides enhanced functionality and convenience for common Kubernet
 
 An enhanced version of kubectl apply that allows patching of Kubernetes manifests before applying them to the cluster.
 
+**Key Features:**
+- Apply patches to YAML manifests
+- Support for file-based, string-based, and stdin patches
+- Handles nested structures and lists in YAML
+- Compatible with all kubectl apply options
+
 **Usage:**
 ```
 k-apply -f <base_yaml_file> [-p <patch_file>...] [kubectl_options]
 ```
 
-**Options:**
-- `-f, --filename`: Path to the base YAML file or `-` for stdin (required)
-- `-p, --patch-file`: Path to patch file(s) or `-` for stdin (can be specified multiple times)
-- `-h, --help`: Displays help information, including all supported `kubectl apply` options
-- All other `kubectl apply` options are supported and passed through to kubectl
-
+For detailed usage instructions and advanced features, see the [k-apply README.md](doc/k-apply/README.md).
