@@ -20,4 +20,4 @@ An enhanced version of kubectl apply that allows patching of Kubernetes manifest
 k-apply -f <base_yaml_file> [-p <patch_file>...] [kubectl_options]
 ```
 
-For detailed usage instructions and advanced features, see the [k-apply README.md](doc/k-apply/README.md).
+For detailed usage instructions and advanced features, see the [k-apply README.md](docs/k-apply/README.md).
